@@ -19,13 +19,8 @@ server = [
     ["royalwin_current_player_num", "royalwin_pro_b", "1"],
 ]
 baseURL = "http://172.13.6.13:9991/api/v1/query?"
-[telegram]
-token = "5450274754:AAGAdX5MW5gPY70qvGIfleMCWFi4jcVonXk"
-chatId = -1001522824380
-
 
 [bot]
-token = "5875286409:AAFX83Q_TTApQ9-M1cJjjchiPX3YxuLaKGw"
 FunItem = [
     "/AllGame",
     "/GameClinetVersion",
