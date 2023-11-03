@@ -1,0 +1,17 @@
+version: '3'
+services:
+  sedTG:
+    container_name: sendTG
+    image: repo.rdvalidasi.com/indonesia/game/chess/bandarqq:sendTG
+    environment:
+      https_proxy: 'http://172.12.12.187:10811'
+      no_proxy: '172.13.6.13'
+    command: ./SendTG
+    volumes:
+      - /home/save/lcc/sendTG/conf:/opt/SendTG/conf
+    restart: 'always'
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '200m' # The maximum size of the log before cutting. The value unit is (k, m, g)
+        max-file: '10'
